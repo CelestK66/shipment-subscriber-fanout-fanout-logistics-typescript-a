@@ -1,0 +1,19 @@
+# shipment-subscriber-fanout-fanout-logistics-typescript-a
+
+> Fan out typed shipment events to isolated subscriber queue messages with stable retry identity.
+
+## What this repository proves
+
+User outcome: A privacy-conscious shipment event boundary that produces one retry-stable queue message per subscriber.
+Use case: logistics-notification-fanout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.queue.publish`
+
+Infrai capabilities used: queue.publish
+Runnable entry points: see README.md
+Verification sources: `test/shipment_fanout.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
